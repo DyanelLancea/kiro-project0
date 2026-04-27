@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopMart — Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html">🛍️ ShopMart</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cart.html" class="cart-link">
+          🛒 Cart
+          <span id="cart-badge"></span>
+        </a>
+        <button id="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">🌙</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="hero">
+      <h1>Welcome to ShopMart 🎉</h1>
+      <p>Discover amazing products at unbeatable prices</p>
+    </div>
+
+    <h2 class="section-title">All Products</h2>
+    <div id="product-grid"></div>
+  </main>
+
+  <footer>© 2026 ShopMart. All rights reserved.</footer>
+
+  <div id="toast"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
